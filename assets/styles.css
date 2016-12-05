@@ -7,15 +7,26 @@ body {
 }
 
 .promo { 
-	position: relative; 
+	/* removed so the main element on video goes to the body
+	position: relative;*/ 
 	margin: 40px;
 	font-size: 16px;
 	font-family: 'Indie Flower', cursive; 
 }
-
-.promo video {
+/* rule apply relative to the .promo rule before
+.promo video { 
 	width: 100%;
 	border: 1px solid #fff;
+}
+*/
+.promo video { /*make the video appear in the entire background of the main page*/
+	position: fixed;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	z-index: -10; /*to make sure it's in the back*/
 }
 
 /*image with absolute position inside the main container but centered*/
