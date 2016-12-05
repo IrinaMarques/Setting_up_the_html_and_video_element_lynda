@@ -86,4 +86,19 @@ body {
 		line-height: 22px; 
 		padding: 10px 0px;
 	}
+	.touch .promo {
+		min-height: inherit; /*we don't force a height in a small screen device*/
+	}
+}
+/*this rules only be apply if modernizr have been added to the class of the HTML element*/
+/* the target is the promo element and the video element*/
+.touch .promo { /*the class .touch before .promo makes this CSS rule more specific than simply .promo inside the small screen*/
+	min-height: 500px;
+	border: 1px solid #fff;
+	background: url(muffins.jpg) no-repeat center bottom;
+	background-size: cover;
+}
+
+.touch .promo video {
+	display: none;
 }

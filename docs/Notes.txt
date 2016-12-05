@@ -1,0 +1,1 @@
+Modernizr helps to solve some problems in the viewer of other browsers and mobile.
