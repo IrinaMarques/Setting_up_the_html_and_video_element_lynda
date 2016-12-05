@@ -27,3 +27,25 @@ body {
 	margin-left: -80px
 }
 
+/*now to style the caption*/
+.promo .caption {
+	position: absolute;
+	left: 1 px;
+	bottom: 60px;
+	background-color: rgba(69,24,10,.8);
+	width:100%;
+}
+
+.promo .caption p {
+	font-size: 3em;
+	margin: 0;
+	padding: 10px 0px;
+	text-align: center;
+	color: #fff;
+	/*add a rule around the top and bottom of the caption to make it look like the rule is continuing*/
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+
+
