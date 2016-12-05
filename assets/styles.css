@@ -47,5 +47,43 @@ body {
 	border-bottom: 1px solid #fff;
 }
 
+/*add media queries to make the design responsive for varying screen sizes*/
+@media screen and (max-width: 700px) {
+	.promo img { /*we want the offset of the margin-left to be half of the width*/
+		top: 15px;
+		width: 120px;
+		margin-left: -60px;
+	}
+	.promo .caption p{ /*changing the size of the p element will then turn changes the size that the caption needs to be to emcompass the p element give us a little bit more room when our browser is less than 700px*/
+		font-size: 2em;
+		line-height: 22px;
+		padding: 10px 0px;
+	}
+}
 
-
+@media screen and (max-width: 450px) {
+	.promo {
+		margin: 15px;
+		padding: 175px 0px 40px 0px;
+		border: 1px solid #fff;
+		background: url(muffins.jpg) no-repeat center bottom;
+		background-size: cover;
+	}
+	/*this will target the video element because if a person is in a small phone this will gonna hide the element*/
+	.promo video { 
+		display: none;
+	}
+	.promo img {
+		top: 15px;
+		width: 90px;
+		margin-left: -45px;
+	}
+	.promo .caption {
+		position: static;
+	}
+	.promo .caption p {
+		font-size: 1.4em;
+		line-height: 22px; 
+		padding: 10px 0px;
+	}
+}
